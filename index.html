@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Mi Web Personal</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Perfil Profesional</h1>
+        <h2>Alisson Espín</h2>
+        <nav>
+            <ul>
+                <li><a href="#quien-soy">¿Quién soy yo?</a></li>
+                <li><a href="#experiencia">Experiencia Laboral</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contactame">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quien-soy">
+        <h2>¿Quién soy yo?</h2>
+        <p>
+            Soy estudiante de ingeniería en software, aprendiendo a desarrollar páginas web
+            y aplicaciones con HTML y PHP. Mi objetivo es crear aplicaciones útiles, accesibles 
+            y orientadas a resolver problemas reales.
+        </p>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <article>
+            <h3>Asistente de Desarrollo Web - Empresa Demo</h3>
+            <p><strong>Periodo:</strong> Enero 2025 - diciembre 2025</p>
+            <ul>
+                <li>Apoyo en construcción y mantenimiento de páginas web.</li>
+                <li>Implementación de formularios y validaciones con HTML5.</li>
+                <li>Pruebas básicas de funcionalidad y mejora de contenido.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Proyecto Freelance - Sitio Informativo</h3>
+            <p><strong>Periodo:</strong> Marzo 2026 - Actualidad</p>
+            <ul>
+                <li>Levantamiento de requerimientos con cliente.</li>
+                <li>Desarrollo de estructura semántica en HTML.</li>
+                <li>Publicación de contenidos y soporte inicial.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <article>
+            <h3>proyecto 1</h3>
+            <p>descripcion proyecto</p>
+            <p><a href="#">Ver proyecto</a></p>
+        </article>
+    </section>
+
+    <section id="contactame">
+        <h2>Contactame</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="nombre">Nombre completo:</label><br>
+                <input id="nombre" name="nombre" type="text" required minlength="3" maxlength="60">
+            </p>
+
+            <p>
+                <label for="correo">Correo electrónico:</label><br>
+                <input id="correo" name="correo" type="email" required>
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono:</label><br>
+                <input id="telefono" name="telefono" type="tel" pattern="[0-9]{7,15}" required>
+            </p>
+
+            <p>
+                <label for="motivo">Motivo de contacto:</label><br>
+                <select id="motivo" name="motivo" required>
+                    <option value="">seleccione una opción</option>
+                    <option value="empleo">Oportunidad laboral</option>
+                    <option value="proyecto">Proyecto freelance</option>
+                    <option value="consulta">Consulta general</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="40" required minlength="10" maxlength="500"></textarea>
+            </p>
+
+            <p>
+                <label for="fecha">Fecha estimada de contacto:</label><br>
+                <input id="fecha" name="fecha" type="date" required>
+            </p>
+
+            <p>
+                <button type="submit">Enviar mensaje</button>
+                <button type="reset">Limpiar formulario</button>
+            </p>
+        </form>
+    </section>
+
+</body>
+</html>
