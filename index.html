@@ -146,5 +146,45 @@
         <h2>Contáctame</h2>
 
     </section>
+
+    <form action="">
+        <label for="nombre">Nombre:</label><br>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            minlength="3"
+            maxlength="60"
+            autocomplete="name"
+            pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{3,60}"
+            title="Ingresa solo letras y espacios (3 a 60 caracteres)"><br><br>
+            
+        <label for="email">Correo Electrónico:</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            maxlength="60"
+            autocomplete="email"
+            title="Ingresa un correo válido, por ejemplo: nombre@dominio.com"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            required
+            inputmode="tel"
+            autocomplete="tel"
+            minlength="10"
+            maxlength="10"
+            pattern="09[0-9]{8}"
+            title="Ingresa un número de 10 dígitos que empiece con 0"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
 </body>
 </html>
