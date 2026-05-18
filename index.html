@@ -1,190 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alisson Espin</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body bgcolor="cyan">
-    <h1>Alisson Espín - Perfil Profesional</h1>
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+            <p class="etiqueta">Perfil Profesional</p>
+            <h1>Alisson Espín</h1>
+            <p class="descripcion">Ingeniería en Sistemas | Backend, datos y diseño de soluciones profesionales</p>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#quien_soy">¿Quién soy?</a></li>
-            <li><a href="#idiomas">Idiomas</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#experiencia">Experiencia Profesional</a></li>
-            <li><a href="#logros">Logros y Actividades Extracurriculares</a></li>
-            <li><a href="#contactame">Contáctame</a></li>
-        </ul>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <ul>
+                <li><a href="#quien_soy">¿Quién soy?</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#logros">Logros</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="quien_soy">
-        <h2>¿Quién soy?</h2>
-        <p>
-            Estudiante de Ingeniería en Sistemas en la Escuela Politécnica Nacional, con enfoque en arquitectura de datos,
-            desarrollo backend y optimización de procesos. Poseo una sólida base técnica en Java y SQL, complementada con
-            experiencia práctica en el diseño de sistemas de gestión. Destaco por mi capacidad analítica, resolución de problemas
-            complejos y habilidades comunicativas de alto nivel desarrolladas mediante la oratoria y la experiencia en atención al
-            cliente. Profesional bilingüe con aptitud para el aprendizaje continuo y la implementación de soluciones tecnológicas
-            que generan impacto inmediato.
-        </p>
+    <main class="contenedor">
+        <section id="quien_soy" class="seccion">
+            <h2>¿Quién soy?</h2>
+            <p>
+                Estudiante de Ingeniería en Sistemas en la Escuela Politécnica Nacional, con enfoque en arquitectura de datos,
+                desarrollo backend y optimización de procesos. Poseo una sólida base técnica en Java y SQL, complementada con
+                experiencia práctica en el diseño de sistemas de gestión. Destaco por mi capacidad analítica, resolución de problemas
+                complejos y habilidades comunicativas de alto nivel desarrolladas mediante la oratoria y la experiencia en atención al
+                cliente. Profesional bilingüe con aptitud para el aprendizaje continuo y la implementación de soluciones tecnológicas
+                que generan impacto inmediato.
+            </p>
 
-        <h3>Habilidades Técnicas</h3>
-            <h4>Leguajes de Programación</h4>
-                <ul>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Perl</li>
-                    <li>HTML</li>
-                </ul>
-            
-            <h4>Bases de Datos</h4>
-                <p>Habilidades en diseño, modelado y normalización.</p>
-                <p>Tecnologías que manejo:</p>
-                <ul>
-                    <li>SQLServer</li>
-                    <li>MySQL</li>
-                    <li>SQLite</li>
-                </ul>
+            <h3>Habilidades técnicas</h3>
+            <div class="rejilla">
+                <div class="tarjeta">
+                    <h4>Lenguajes de programación</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Perl</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
 
-            <h4>Competencias</h4>
+                <div class="tarjeta">
+                    <h4>Bases de datos</h4>
+                    <p>Habilidades en diseño, modelado y normalización.</p>
+                    <ul>
+                        <li>SQLServer</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta">
+                    <h4>Competencias</h4>
+                    <ul>
+                        <li>Desarrollo de software</li>
+                        <li>Desarrollo backend</li>
+                        <li>Optimización de procesos</li>
+                        <li>Gestión de inventarios</li>
+                        <li>Resolución de problemas</li>
+                        <li>Comunicación efectiva</li>
+                        <li>Análisis de datos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="idiomas" class="seccion">
+            <h2>Idiomas</h2>
             <ul>
-                <li>Desarrollo de software</li>
-                <li>Desarrollo Backend</li>
-                <li>Optimización de procesos</li>
-                <li>Gestión de Inventarios</li>
-                <li>Resolución de problemas</li>
-                <li>Comunicación efectiva</li>
-                <li>Análisis de datos</li>
+                <li>Español - Nativo</li>
+                <li>English - Intermedio/Avanzado</li>
+                <li>Francés - Básico/Intermedio</li>
             </ul>
-    </section>
+        </section>
 
-    <section id="idiomas">
-        <h2>Idiomas</h2>
-        <ul>
-            <li>Español - Nativo</li>
-            <li>English - Intermedio/Avanzado</li>
-            <li>Francés - Básico/Intermedio</li>
-        </ul>
-    </section>
+        <section id="portafolio" class="seccion">
+            <h2>Portafolio</h2>
+            <div class="rejilla">
+                <article class="tarjeta">
+                    <h3>Sistema de Gestión para la Junta Autónoma de Agua Parroquial de Veracruz</h3>
+                    <p><b>Rol:</b> Desarrolladora independiente</p>
+                    <p><b>Área:</b> Backend, frontend y diseño de BDD</p>
+                    <p><b>Estado:</b> En desarrollo</p>
+                    <ul>
+                        <li>Desarrollo de un sistema integral web/escritorio para automatizar el cálculo de planillas de agua.</li>
+                        <li>Optimización de procesos administrativos mediante automatización de lógica de negocio y bases de datos.</li>
+                        <li>Diseño y normalización de la estructura de base de datos para garantizar integridad y actualización en tiempo real.</li>
+                    </ul>
+                </article>
 
-    <section id="portafolio">
-        <h2>Portafolio</h2>
-            <h4>Sistema de Gestión para la Junta Autónoma de Agua Parroquial de Veracruz</h4>
-            <p>Desarrolladora Independiente (Backend, Frontend, Diseño BDD)</p>
-            <p>Estado: En desarrollo</p>
+                <article class="tarjeta">
+                    <h3>Réplíca del videojuego: Bad Ice Cream</h3>
+                    <p><b>Rol:</b> Desarrolladora backend</p>
+                    <p><b>Área:</b> Proyecto académico</p>
+                    <p><b>Estado:</b> Finalizado</p>
+                    <ul>
+                        <li>Desarrollo de una réplica funcional del videojuego aplicando POO.</li>
+                        <li>Implementación de arquitectura en 3 capas para modularidad y escalabilidad.</li>
+                        <li>Gestión de lógica de juego, entidades y colisiones con buenas prácticas de software.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="seccion">
+            <h2>Experiencia profesional</h2>
+            <div class="rejilla">
+                <div class="tarjeta">
+                    <h3>Chaide & Chaide (Casa Matriz, Puyo)</h3>
+                    <p>Asistente de ventas y gestión de inventario</p>
+                    <ul>
+                        <li>Gestión y optimización manual de inventarios entre sedes ante la falta de sistemas automatizados.</li>
+                        <li>Atención al cliente personalizada para alinear ventas con necesidades del usuario.</li>
+                        <li>Desarrollo de habilidades en resolución de conflictos, gestión de quejas y comunicación efectiva.</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Sistema de Gestión para la Junta Autónoma de Agua Parroquial de Veracruz</h3>
+                    <p>Desarrolladora independiente - Backend, frontend y base de datos</p>
+                    <ul>
+                        <li>Sistema integral web/escritorio para automatizar el cálculo de planillas de agua.</li>
+                        <li>Optimización de procesos administrativos y reducción del tiempo de generación de informes.</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Réplíca del videojuego: Bad Ice Cream</h3>
+                    <p>Desarrolladora backend - Proyecto académico</p>
+                    <ul>
+                        <li>Réplica funcional del videojuego utilizando arquitectura en 3 capas.</li>
+                        <li>Aplicación de principios sólidos de POO y buenas prácticas de diseño de software.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="logros" class="seccion">
+            <h2>Logros y actividades extracurriculares</h2>
+            <h3>Oratoria y debate</h3>
+            <p>Vicepresidenta del Club de Debate y Oratoria de la Escuela Politécnica Nacional (CDO-EPN)</p>
+            <p>Participante activo en competencias de oratoria y debate, desarrollando habilidades de comunicación efectiva, argumentación y pensamiento crítico.</p>
+
+            <h3>Logros en la oratoria</h3>
             <ul>
-                <li>Desarrollo de un sistema integral web/escritorio para automatizar el cálculo de planillas de agua, reemplazando 
-                    registros físicos y hojas de cálculo manuales.</li>
-                <li>El objetivo principal es la optimización de procesos administrativos, reduciendo el tiempo de actualización de 
-                    informes de servicio y multas (proceso que manualmente tomaba 8 horas distribuidas en 2 días) mediante la 
-                    automatización de la lógica de negocio y gestión de bases de datos.</li>
-                <li>Diseño y normalización de la estructura de base de datos para garantizar la integridad y actualización en tiempo 
-                    real de los datos de los usuarios.</li>
+                <li>TIED 2025: Reconocida como la 10ma mejor oradora del torneo.</li>
+                <li>TINE 2026: Participación como persona jueza de debate (trainee).</li>
+                <li>Copa Tridente 2.0: Integrante del equipo de tabulación (Vice-Jefa) y del equipo de equidad (aprendiz).</li>
             </ul>
 
-            <h4>Replica del Videojuego: Bad Ice Cream</h4>
-            <p>Estado: Finalizado</p>
-            <p>Desarrolladora Backend (Proyecto Académico)</p>
+            <h3>Formación complementaria</h3>
             <ul>
-                <li>Desarrollo de una réplica funcional del videojuego aplicando principios sólidos de Programación Orientada a 
-                    Objetos (POO).</li>
-                <li>Implementación de arquitectura en 3 capas (Presentación, Negocio, Datos) para asegurar la modularidad, 
-                    mantenibilidad y escalabilidad del software.</li>
-                <li>Gestión eficiente de lógica de juego, entidades y colisiones mediante buenas prácticas de diseño de software.</li>
+                <li>Becaria del programa "1000 Talentos de América Latina" para el curso de Fundamentos de Inteligencia Artificial.</li>
             </ul>
-    </section>
+        </section>
 
-    <section id="experiencia">
-        <h2>Experiencia Profesional</h2>
-        <h4>Chaide & Chaide (Casa Matriz, Puyo)</h4>
-        <p>Asistente de Ventas y Gestión de Inventario</p>
-        <ul>
-            <li>Gestión y optimización manual de inventarios entre sedes ante la falta de sistemas automatizados, garantizando la 
-                continuidad de las ventas.</li>
-            <li>Atención al cliente personalizada, asesorando técnicamente sobre especificaciones de productos para alinear las 
-                ventas con las necesidades del usuario.</li>
-            <li>Desarrollo de habilidades en resolución de conflictos, gestión de quejas y comunicación efectiva en entornos de 
-                alta demanda.</li>
-        </ul>
-        <h4>Sistema de Gestión para la Junta Autónoma de Agua Parroquial de Veracruz</h4>
-        <ul>
-            <li>Desarrolladora Independiente - Desarrollo Backend, Frontend y Diseño de Base de Datos</li>
-            <li>Sistema integral web/escritorio para automatizar el cálculo de planillas de agua, optimizando procesos 
-                administrativos y reduciendo significativamente el tiempo de generación de informes.</li>
-        </ul>
+        <section id="contactame" class="seccion seccion-contacto">
+            <h2>Contáctame</h2>
+            <p class="descripcion">Si deseas conversar sobre oportunidades, proyectos o colaboración profesional, este es el canal directo.</p>
+            <br>
 
-        <h4>Replica del Videojuego: Bad Ice Cream</h4>
-        <ul>
-            <li>Desarrolladora Backend - Proyecto Académico</li>
-            <li>Réplica funcional del videojuego utilizando arquitectura en 3 capas (Presentación, Negocio, Datos), aplicando 
-                principios sólidos de POO y buenas prácticas de diseño de software.</li>
-        </ul>
-    </section>
+            <form class="formulario-contacto" action="">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    minlength="3"
+                    maxlength="60"
+                    autocomplete="name"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,60}"
+                    title="Ingresa solo letras y espacios (3 a 60 caracteres)">
 
-    <section id="logros">
-        <h2>Logros y Actividades Extracurriculares</h2>
-        <h3>Oratoria y Debate</h3>
-        <p>Vicepresidenta del Club de Debate y Oratoria de la Escuela Politécnica Nacional (CDO-EPN)</p>
-        <p>Participante activo en competencias de oratoria y debate, desarrollando habilidades de comunicación efectiva, 
-            argumentación y pensamiento crítico.</p>
-        <h4>Logros en la Oratoria</h4>
-        <ul>
-            <li>TIED 2025: Reconocida como la 10ma mejor oradora del torneo.</li>
-            <li>TINE 2026: Participación como persona jueza de debate (aprendiz).</li>
-            <li>Copa Tridente 2.0: Integrante del equipo de tabulación (Vice-Jefa) y del equipo de equidad (aprendiz).</li>    
-        </ul>
-        <h4>Formación Complementaria</h4>
-        <ul>
-            <li>Becaria del programa "1000 Talentos de América Latina" para el curso de Fundamentos de Inteligencia Artificial.</li>
-        </ul>
-    </section>
+                <label for="email">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    maxlength="60"
+                    autocomplete="email"
+                    title="Ingresa un correo válido, por ejemplo: nombre@dominio.com">
 
-    <section id="contactame">
-        <h2>Contáctame</h2>
+                <label for="telefono">Teléfono</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    inputmode="tel"
+                    autocomplete="tel"
+                    minlength="10"
+                    maxlength="10"
+                    pattern="09[0-9]{8}"
+                    title="Ingresa un número de 10 dígitos que empiece con 09">
 
-    </section>
-
-    <form action="">
-        <label for="nombre">Nombre:</label><br>
-        <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            required
-            minlength="3"
-            maxlength="60"
-            autocomplete="name"
-            pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,60}"
-            title="Ingresa solo letras y espacios (3 a 60 caracteres)"><br><br>
-
-        <label for="email">Correo Electrónico:</label><br>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            maxlength="60"
-            autocomplete="email"
-            title="Ingresa un correo válido, por ejemplo: nombre@dominio.com"><br><br>
-
-        <label for="telefono">Teléfono:</label><br>
-        <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            required
-            inputmode="tel"
-            autocomplete="tel"
-            minlength="10"
-            maxlength="10"
-            pattern="09[0-9]{8}"
-            title="Ingresa un número de 10 dígitos que empiece con 09"><br><br>
-
-        <input type="submit" value="Enviar">
-    </form>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
 
 </body>
 </html>
